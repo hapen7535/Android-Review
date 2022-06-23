@@ -4,16 +4,19 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class VPAdapter(strData: ArrayList<String>)
+class VPAdapter(strData: ArrayList<String>, colorData: ArrayList<Int>)
     : RecyclerView.Adapter<VPAdapter.MyViewHolder>() {
 
     val arrData = strData
+    val arrColors = colorData
 
     inner class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         var txtCount: TextView = itemView.findViewById(R.id.txtCount)
+        var bgColor : LinearLayout = itemView.findViewById(R.id.background)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
@@ -27,6 +30,7 @@ class VPAdapter(strData: ArrayList<String>)
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         holder.txtCount.text = arrData[position]
+        holder.bgColor.setBackgroundColor(arrColors[position])
     }
 
     override fun getItemCount(): Int {
