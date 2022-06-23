@@ -9,7 +9,7 @@ class ViewPagerActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_view_pager)
 
         var arrStr: ArrayList<String> = ArrayList()
         for (i in 1..100) {
