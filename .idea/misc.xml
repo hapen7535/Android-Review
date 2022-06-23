@@ -5,8 +5,10 @@
       <map>
         <entry key="app/src/main/res/layout/activity_handler.xml" value="0.15625" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.18072916666666666" />
+        <entry key="app/src/main/res/layout/activity_view_pager.xml" value="0.22395833333333334" />
         <entry key="app/src/main/res/layout/fragment_banner.xml" value="0.2625" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.17552083333333332" />
+        <entry key="app/src/main/res/layout/view_pager_item.xml" value="0.23802083333333332" />
       </map>
     </option>
   </component>
